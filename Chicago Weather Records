@@ -1,3 +1,7 @@
+# Endereço da tabela "Chicago Weather Records, November 2017"
+https://practicum-content.s3.us-west-1.amazonaws.com/data-analyst-eng/moved_chicago_weather_2017.html
+
+
 # Descrição dos dados
 
 Um banco de dados com informações sobre corridas de táxi em Chicago:
@@ -25,6 +29,3 @@ tabela weather_records: dados sobre o clima
 •	ts: grava data e hora (tempo arredondado para a hora)
 •	temperature: temperatura quando o registro foi feito
 •	description: breve descrição das condições meteorológicas, ex. "chuva leve" ou "nuvens esparsas"
-
-Endereço da tabela "Chicago Weather Records, November 2017"
-https://practicum-content.s3.us-west-1.amazonaws.com/data-analyst-eng/moved_chicago_weather_2017.html
