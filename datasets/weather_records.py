@@ -6,6 +6,7 @@ https://practicum-content.s3.us-west-1.amazonaws.com/data-analyst-eng/moved_chic
 import pandas as pd
 import requests
 from bs4 import BeautifulSoup
+from sqlalchemy import create_engine
 
 URL = 'https://practicum-content.s3.us-west-1.amazonaws.com/data-analyst-eng/moved_chicago_weather_2017.html'
 
@@ -26,3 +27,10 @@ for row in table.find_all('tr'):
 weather_records = pd.DataFrame(content, columns=heading_table)
 
 print(weather_records)
+
+# Criar uma conexão com o banco de dados SQLite
+engine = create_engine('sqlite:///weather_records.db')
+
+# Carregar os dados do DataFrame para o banco de dados SQL
+weather_records.to_sql('weather_records', con=engine,
+                       if_exists='replace', index=False)
