@@ -21,7 +21,7 @@ Este projeto faz parte do curso de Ciência de Dados da TripleTen e envolve a an
 ### Instruções de Instalação
 
 1.	**Clone o repositório:** git clone https://github.com/Rosental14/Zuber.git
-2.	**Navegue até o diretório do projeto:** cd projeto_zuber.ipynb
+2.	**Navegue até o diretório do projeto:**
 3.	**Instale as dependências:** pip install -r requirements.txt  
 
 ### Uso  
